@@ -131,8 +131,15 @@ d) No Devolvera nada.
 //write your code here
 //A
 let frutas = ["manzana", "banana", "naranja", "piña"];
-let frutas2 = frutas.push("mango");
-console.log(frutas2);
+frutas.push();
+console.log(frutas.push("mango"));
+
+//B
+console.log(frutas.shift());
+
+//C
+
+console.log((frutas[2] = "kiwi"));
 
 /*Pregunta 14:
 Problema:
@@ -147,7 +154,14 @@ const nombres = ["Ana", "Pedro", "Andrés", "María", "Alberto", "Juana"]
 */
 //write your code here
 
-//console.log(obtenerNombresConLetraA(nombres)); // ["Ana", "Andrés", "Alberto"]
+let nombres = ["Ana", "Pedro", "Andrés", "María", "Alberto", "Juana"];
+
+function obtenerNombresConLetraA(nombres) {
+  let result = nombres.filter(element => element.includes("a"));
+  return result;
+}
+
+console.log(obtenerNombresConLetraA(nombres)); // ["Ana", "Andrés", "Alberto"]
 
 // Pregunta 15:
 /*Escribe una función en JavaScript que ordene un arreglo de números de menor a mayor sin utilizar métodos de arreglo como sort. 
